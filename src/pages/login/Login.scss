@@ -1,0 +1,337 @@
+.login-container {
+  height: 100%;
+  display: flex;
+  background: #f8faff;
+
+  .left-side {
+    background: #605bff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    transform: skew(-10deg);
+    transform-origin: top;
+
+    .logo-container {
+      align-items: center;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      height: 80.15px;
+      width: fit-content;
+      margin: 2.5rem 0 0 3.5rem;
+      transform: skew(10deg);
+    }
+
+    .brand-name {
+      align-self: center;
+      color: #fff;
+      font-family: Montserrat-Bold;
+      font-size: 72px;
+      width: fit-content;
+      margin: 0;
+      transform: skew(10deg);
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+      transform: skew(10deg);
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right-side {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .rigth-side-inner-container {
+      .title {
+        font-family: Montserrat-Bold;
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .tag-line {
+        font-family: Lato-Regular;
+        line-height: 19px;
+      }
+
+      .signin-options {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        width: 438px;
+
+        button {
+          align-items: center;
+          background: #ffffff;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          gap: 0.75rem;
+          height: 32.93px;
+          justify-content: center;
+          width: 197.6px;
+
+          span {
+            color: #858585;
+            font-family: Montserrat-Regular;
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+
+      form {
+        background: #ffffff;
+        border-radius: 10px;
+        border: none;
+        padding: 2rem;
+        max-width: fit-content;
+
+        label {
+          font-family: Lato-Regular;
+          display: block;
+        }
+
+        input {
+          background: #f5f5f5;
+          border-radius: 10px;
+          border: none;
+          font-family: Lato-Regular;
+          height: 43.91px;
+          width: 356.77px;
+          padding-left: 1rem;
+          margin: 1rem 0;
+        }
+
+        a {
+          display: block;
+          font-family: Lato-Regular;
+          color: #346bd4;
+          text-decoration: none;
+        }
+
+        button {
+          background: #605bff;
+          border-radius: 10px;
+          border: none;
+          color: #fff;
+          font-family: Montserrat-Bold;
+          height: 43.91px;
+          margin-top: 1.5rem;
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+
+      .signup-text {
+        font-family: Lato-Regular;
+        text-align: center;
+        color: #858585;
+        max-width: 438px;
+        margin-top: 1.5rem;
+
+        a {
+          color: #346bd4;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .login-mobile-view {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-container {
+    overflow: auto;
+
+    .left-side,
+    .right-side {
+      display: none;
+    }
+
+    .login-mobile-view {
+      display: block;
+      width: 100%;
+
+      .header {
+        align-items: center;
+        background: #605bff;
+        display: flex;
+        gap: 0.75rem;
+        height: 80px;
+        padding-left: 1rem;
+
+        .brand-logo-container {
+          align-items: center;
+          background: #fafafb;
+          border-radius: 50%;
+          display: flex;
+          height: 26px;
+          width: 26px;
+
+          img {
+            height: 7.15px;
+            width: 26.87px;
+          }
+        }
+
+        p {
+          color: #fafafb;
+          font-family: Nunito-SemiBold;
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+
+      .content {
+        padding: 1rem;
+
+        .content-header {
+          padding: 0.25rem 2rem;
+
+          .title {
+            font-family: Montserrat-Bold;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0;
+          }
+
+          .tag-line {
+            font-family: Lato-Regular;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0.5rem 0 0;
+          }
+        }
+
+        .signin-options {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+          justify-content: center;
+
+          button {
+            align-items: center;
+            background: #ffffff;
+            border-radius: 10px;
+            border: none;
+            display: flex;
+            gap: 1rem;
+            height: 32.93px;
+            width: 153.35px;
+
+            span {
+              color: #858585;
+              font-family: Montserrat-Regular;
+              font-size: 10px;
+              line-height: 12px;
+            }
+          }
+        }
+
+        form {
+          background: #ffffff;
+          border-radius: 20px;
+          margin: 1.5rem auto;
+          padding: 1.5rem;
+          width: fit-content;
+
+          div {
+            margin-bottom: 1rem;
+
+            label,
+            input {
+              font-family: Lato-Regular;
+              line-height: 19px;
+            }
+
+            label {
+              display: block;
+              margin-bottom: 0.4rem;
+            }
+
+            input {
+              background: #f5f5f5;
+              border-radius: 10px;
+              border: none;
+              height: 43.91px;
+              padding-left: 1rem;
+              padding-left: 1rem;
+              width: 276.88px;
+            }
+          }
+
+          a {
+            color: #346bd4;
+            display: block;
+            font-family: Lato-Regular;
+            line-height: 19px;
+            margin-bottom: 1rem;
+            text-decoration: none;
+          }
+
+          button {
+            background: #605bff;
+            border-radius: 10px;
+            border: none;
+            color: #ffffff;
+            font-family: Montserrat-Bold;
+            height: 43.91px;
+            line-height: 20px;
+            width: 276.88px;
+          }
+        }
+      }
+
+      footer {
+        text-align: center;
+        p,
+        a {
+          font-family: Lato-Regular;
+          line-height: 19px;
+        }
+
+        p {
+          color: #858585;
+        }
+
+        a {
+          color: #346bd4;
+          text-decoration: none;
+        }
+
+        .icons-container {
+          align-items: center;
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          margin: 2rem 0 0;
+
+          img {
+            background: #fff;
+          }
+
+          // img:last-child {
+          //   // color: #858585;
+          // }
+        }
+      }
+    }
+  }
+}

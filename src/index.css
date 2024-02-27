@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./assets/fonts/montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(./assets/fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(./assets/fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Figtree-SemiBold;
+  src: url(./assets/fonts/figtree/Figtree-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Figtree-Regular;
+  src: url(./assets/fonts/figtree/Figtree-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url(./assets/fonts/nunito/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(./assets/fonts/nunito/Nunito-Bold.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+input {
+  box-sizing: border-box;
+}

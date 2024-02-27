@@ -1,0 +1,13 @@
+.layout-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+
+  .header-outlet-container {
+    flex-grow: 1;
+
+    .outlet-container {
+      height: calc(100% - 75px);
+    }
+  }
+}

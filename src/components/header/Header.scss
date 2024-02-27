@@ -1,0 +1,68 @@
+header {
+  flex-grow: 1;
+  background: #f8faff;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+
+  p {
+    font-family: Figtree-SemiBold;
+    font-size: 24px;
+    line-height: 32px;
+    flex-grow: 1;
+  }
+
+  .mobile-view-burgerRegularIcon,
+  .mobile-view-logo {
+    display: none;
+  }
+
+  .notification-header-icon {
+    margin-right: 2rem;
+  }
+
+  .image-logo {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    p {
+      display: none;
+    }
+
+    .mobile-view-burgerRegularIcon,
+    .mobile-view-logo {
+      display: block;
+    }
+
+    .burgerRegularIcon-container {
+      flex-grow: 0.1;
+      .mobile-view-burgerRegularIcon {
+        width: 16px;
+        height: 12px;
+      }
+    }
+
+    .mobile-view-logo {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      flex-grow: 1;
+
+      img {
+        width: 25.99px;
+        height: 26px;
+      }
+
+      p {
+        font-family: Nunito-SemiBold;
+        font-size: 20px;
+        line-height: 27px;
+        display: block;
+      }
+    }
+  }
+}

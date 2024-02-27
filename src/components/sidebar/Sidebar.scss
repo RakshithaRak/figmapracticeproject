@@ -1,0 +1,118 @@
+aside {
+  width: 218px;
+  height: 100%;
+
+  .mobile-view-header {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-family: Nunito-SemiBold;
+      font-size: 24px;
+      line-height: 33px;
+      color: #030229;
+    }
+  }
+
+  .navs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .current-route-gradient {
+      background: linear-gradient(
+        90deg,
+        #aca9ff 0%,
+        rgba(172, 169, 255, 0.1) 0.25%
+      );
+      padding: 0.5rem;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1rem 0;
+      min-width: 70%;
+
+      img {
+        cursor: pointer;
+      }
+
+      p {
+        color: #9a9aa9;
+        font-family: Nunito-SemiBold;
+        font-size: 16px;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      .current-route {
+        color: #605bff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  aside {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+
+    .navs-container {
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 2.25rem 0 0 0;
+      gap: 1rem;
+
+      .nav-container {
+        min-width: fit-content;
+        padding-left: 2.25rem;
+      }
+    }
+    .header {
+      display: none;
+    }
+
+    .mobile-view-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+
+      .closeicon {
+        width: 40px;
+        height: 40px;
+        gap: 12px;
+        margin-top: 0.75rem;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        img {
+          width: 25.99px;
+          height: 26px;
+        }
+
+        p {
+          font-family: Nunito-SemiBold;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27px;
+          letter-spacing: 0em;
+        }
+      }
+    }
+  }
+}
